@@ -1,0 +1,28 @@
+@import 
+  'abstracts/_variables.scss',
+  'abstracts/_functions.scss',
+  'abstracts/_mixins.scss';
+ 
+@import 
+  'base/_animations.scss',
+  'base/_base.scss',
+  'base/_reset.scss',
+  'base/_typography.scss';
+ 
+@import 
+  'components/_buttons.scss',
+  'components/_media.scss',
+  'components/_thumbnails.scss';
+ 
+@import 
+  'layout/_grid.scss',
+  'layout/_footer.scss',
+  'layout/_forms.scss',
+  'layout/_grid.scss',
+  'layout/_header.scss',
+  'layout/_navigation.scss';
+
+@import 
+  'pages/_guidelines.scss',
+  'pages/_home.scss',
+  'pages/_Wave.scss'; 
