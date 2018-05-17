@@ -1,0 +1,23 @@
+body{
+    background:#101010;
+    overflow:hidden;
+}
+svg{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+    overflow:hidden
+}
+.wave{
+    stroke:#88DD83;
+    stroke-width:1px;
+    fill:none;
+}
+.datos {
+    position:absolute;
+    z-index:999;
+    color:#88DD83;
+    top: 10px;
+    left:10px;
+}

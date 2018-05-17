@@ -1,0 +1,64 @@
+.grid .col:nth-child(odd){
+	background:lightgrey;  
+	margin-bottom:16px; 
+}
+.grid .col:nth-child(even){
+	background:white; 
+	margin-bottom:16px; 
+}
+.radius{
+	border-radius:100px; 
+} 
+.purple-bg-1,
+.green-bg-1,
+.grey-bg-1{
+	color:#010101;
+}
+.purple-bg-2,
+.purple-bg-3,
+.purple-bg-4,  
+.green-bg-2,
+.green-bg-3,
+.green-bg-4,
+.grey-bg-1, 
+.grey-bg-2,
+.grey-bg-3,
+.grey-bg-4 {
+	color:#fff;
+}
+.purple-bg-1{
+	background-color:#ACA2EA;
+} 
+.purple-bg-2{
+	background-color:#7D76AA;
+} 
+.purple-bg-3{
+	background-color:#4E4A6B;
+}  
+.purple-bg-4{
+	background-color:#322F44;
+} 
+.green-bg-1{
+	background-color:#88DD83;
+} 
+.green-bg-2{
+	background-color:#619E5E;
+} 
+.green-bg-3{
+	background-color:#599156;
+}  
+.green-bg-4{
+	background-color:#325130;
+}  
+.grey-bg-1{
+	background-color:#BABABA;
+} 
+.grey-bg-2{
+	background-color:#888888;
+} 
+.grey-bg-3{
+	background-color:#444444;
+} 
+.grey-bg-4{
+	background-color:#101010;
+} 
