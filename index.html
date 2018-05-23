@@ -1,41 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<title>Mi Portfolio</title>   
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"> 
-    <link href="assets/css/main.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
+    <head>
+        <meta charset="utf-8">
+        <title>Mi Portfolio</title>   
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="assets/css/main.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 text-left"> 
+                            <h1 class="title-brand"> <strong>nh</strong>design</h1> 
+                    </div> 
+                    <div class="col-2 text-center">
+                        <div class="btn-menu">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>  
+                    <div class="col-md-3 col-sm-3 col-5 offset-md-2 text-right">
+                        <div class="btn-search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <nav class="col-md-4 offset-md-4 col-12 menu hidden text-center">
+                        <a href="">Home</a>
+                        <a href="">Portfolio</a>
+                        <a href="">Blog</a>
+                        <a href="">Acerca</a>
+                        <a href="">Contacto</a> 
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid aligner home" id="home">
             <div class="row">
-                <div class="col-5 text-left"> 
-                        <h1 class="title-brand"> <strong>nh</strong>design</h1> 
-                </div> 
-                <div class="col-2 text-center">
-                    <div class="btn-menu">
-                        <i class="fas fa-bars"></i>
-                        <nav class="menu hidden text-center">
-                            <a href="">Home</a>
-                            <a href="">Portfolio</a>
-                            <a href="">Blog</a>
-                            <a href="">Acerca</a>
-                            <a href="">Contacto</a>
-                        </nav>
-                    </div>
-                </div> 
-                <div class="col-2"></div>
-                <div class="col-3 text-right">
-                    <div class="btn-search">
-                        <i class="fas fa-search"></i>
-                    </div>
-                </div> 
+                <h2>I´m a front-end developer designer &amp; illustrator</h2>    
+                <a href="" class="btn-white">Contactar</a>
             </div>
         </div>
-    </header>
-    <script defer src="assets/js/fontawesome-all.min.js"></script>
-    <script defer src="assets/js/app.js"></script>
-</body>
+        <div class="container services" id="services">
+            <h2>Services</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <a href=""><i class="far fa-object-group fa-2x"></i></a>
+                    <h3><a href="">Design</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati similique maxime ratione culpa doloremque.</p>
+                    <a href="" class="btn-white">Ver portafolio</a>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <a href=""><i class="fas fa-code fa-2x"></i></a>
+                    <h3><a href="">Web</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati similique maxime ratione culpa doloremque.</p>
+                    <a href="" class="btn-white">Ver portafolio</a>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 text-center">
+                    <a href=""><i class="fas fa-paint-brush fa-2x"></i></a>
+                    <h3><a href="">Illustration</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati similique maxime ratione culpa doloremque.</p>
+                    <a href="" class="btn-white">Ver portafolio</a>
+                </div>
+            </div>
+        </div>
+        <div class="container contact" id="contact">
+            <h2>Contact</h2>
+            <div class="row">
+                <div class="col-md-4 offset-md-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae id, dolorem nostrum ea dignissimos rerum similique repellat, eveniet consequatur nulla quae dolo.</p>
+                    <ul class="rss">
+                        <li>
+                            <a href=""
+                                ><i class="fab fa-behance"></i>
+                                @nicolashidalgo 
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""
+                                ><i class="fab fa-github"></i>
+                                @nicolashidalgo1989
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""
+                                ><i class="fab fa-facebook"></i>
+                                fb.com/nicolashidalgo1989
+                            </a>
+                        </li>
+                    </ul>
+                </div>   
+                <div class="col-md-4 offset-md-2">
+                    columna 2
+                </div>          
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <p>nhdesign &copy; Todos los derechos reservados 2018</p>
+                </div>
+            </div>
+        </footer>
+        <a href="javascript:void(0);" class="fas fa-angle-down btn-scroll-down"></a> 
+        <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
+        <script defer src="assets/js/fontawesome-all.min.js"></script>
+        <script defer src="assets/js/app.js"></script>
+    </body>
 </html>

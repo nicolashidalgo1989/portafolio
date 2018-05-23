@@ -1,0 +1,14 @@
+.rss{
+    padding:0;
+    list-style: none;
+    & li {
+        margin-bottom:16px;
+        & a {
+            color: $white;
+            &:hover{
+                color: $white; 
+                text-decoration:none
+            }
+        }
+    }
+} 

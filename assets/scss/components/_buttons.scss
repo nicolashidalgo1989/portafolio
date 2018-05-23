@@ -2,3 +2,27 @@
 $btn-color-primary: $white;
 $btn-color-secondary: $transparent;
 $btn-color-inactive: $white;
+.btn-white{
+    border-radius: 100px;
+    border: 1px solid $btn-color-primary;
+    display: block;
+    padding: 8px 0;
+    margin: 0 auto 32px;
+    width: 100%;
+    max-width:200px;
+    text-align: center;
+    color: $btn-color-primary;
+    &:hover{
+        color: $btn-color-primary;
+        text-decoration: none;
+    }
+}
+.btn-scroll-down{
+    color: $btn-color-primary;
+    position: fixed;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+}
