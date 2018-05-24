@@ -14,7 +14,7 @@ function openMenu(e){
     btnMenu.children[0].classList.toggle('fa-times'); 
     header.classList.toggle('open');
     menu.classList.toggle('hidden');
-    document.querySelector('body')[0].classList.toggle('overflow-hidden');
+    document.querySelector('body').classList.toggle('overflow-hidden');
 }
 function openSearch(e){
     btnSearch.classList.toggle('open');
