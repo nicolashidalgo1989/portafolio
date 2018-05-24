@@ -12,6 +12,8 @@ $btn-color-inactive: $white;
     max-width:200px;
     text-align: center;
     color: $btn-color-primary;
+    background: $transparent;
+    outline:none;
     &:hover{
         color: $btn-color-primary;
         text-decoration: none;

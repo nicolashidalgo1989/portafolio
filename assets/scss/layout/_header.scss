@@ -27,6 +27,15 @@
     .btn-search{
         position: relative;
         cursor: pointer;
+        width: 16px;
+        float: right;
+        @include trans(all, 0.3s, ease-in-out); 
+        & .input-search { 
+            display: none;
+        }
+        & .clear-search{ 
+            display: none;
+        }
         &:after{
             content: "";
             width: 0;
@@ -37,12 +46,36 @@
             right: 0;
             bottom: 0;
             position: absolute;
-            -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
+            @include trans(all, 0.3s, ease-in-out); 
         }
         &.open{
+            width: 100%;
             &:after{ 
                 width:100%; 
+            }
+            & .input-search {
+                font-family: $roboto;
+                width: 90%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #f0f0f0; 
+                display: block;
+                font-weight:200;
+                text-indent:8px;
+                font-size:12px;
+            }
+            & .clear-search{    
+                font-size: 12px;
+                width: 100%;
+                position: absolute;
+                right: 0;
+                bottom: -24px;
+                display:block;
             }
         }
     }

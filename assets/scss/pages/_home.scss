@@ -1,5 +1,9 @@
-.home, .services, .contact{
+.home, .services, .about, .contact{
     height: 100vh;
+    padding-top:132px;
+}
+.about{
+    background:black;
 }
 .background-image{
     object-fit: cover;

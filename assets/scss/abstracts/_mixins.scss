@@ -52,3 +52,7 @@ $breakpoints: (
     -ms-flex-pack: $justify;
     justify-content: $justify;
 }
+@mixin trans($object, $time, $type){ 
+    -webkit-transition: $object $time $type;
+    transition: $object $time $type;
+}
