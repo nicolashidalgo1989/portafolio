@@ -1,0 +1,30 @@
+.tab{
+    display:  block;
+    text-align: center;
+    margin-bottom:40px;
+    & a{
+        display: inline-block;
+        color:$white;
+        padding:16px;
+        font-weight:200;
+        font-size:0.9em;
+        text-transform:uppercase;
+        &:hover{
+            text-decoration:none;
+            color:$white;
+            &:after{
+                width:100%;
+            }
+        }
+        &:after{
+            content:"";
+            width:0;
+            height:1px;
+            display: block;
+            background: $white;
+            margin:0 auto;
+            @include trans(all, 0.3s, ease-in-out);
+        }
+    }
+}
+

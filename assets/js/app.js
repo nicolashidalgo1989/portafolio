@@ -1,6 +1,7 @@
 //variables
 const   btnMenu = document.querySelectorAll('.btn-menu')[0],
         btnSearch = document.querySelectorAll('.btn-search')[0], 
+        inputSearch = document.querySelectorAll('.input-search')[0],
         header = document.querySelectorAll('header')[0],
         menu = document.querySelectorAll('.menu')[0],
         input = document.querySelectorAll('input'),
@@ -8,6 +9,7 @@ const   btnMenu = document.querySelectorAll('.btn-menu')[0],
 //listeners
 btnMenu.addEventListener('click', openMenu);
 btnSearch.addEventListener('click', openSearch); 
+inputSearch.addEventListener('click', clearSearch); 
 for(i=0;input.length>i;i++){ 
     input[i].addEventListener('click', activeLabel);
     input[i].addEventListener('blur', outInput);
@@ -22,8 +24,7 @@ function openMenu(e){
     menu.classList.toggle('hidden');
     document.querySelector('body').classList.toggle('overflow-hidden');
 }
-function openSearch(e){
-    console.log(e.target);
+function openSearch(e){ 
     let clase = e.target.classList;
     if(!e.target.parentElement.classList.contains('open')){
         btnSearch.classList.add('open'); 
@@ -31,6 +32,14 @@ function openSearch(e){
         btnSearch.classList.remove('open');  
     }
 }  
+function clearSearch(){ 
+    let clear = document.querySelector('.clear-search');
+    if(inputSearch.value.length > 0){
+        clear.classList.add('show');
+    }else{
+        clear.classList.remove('show');
+    }
+}
 function activeLabel(e){ 
     e.target.parentElement.children[1].classList.add('active');   
 } 

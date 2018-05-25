@@ -14,8 +14,10 @@ $btn-color-inactive: $white;
     color: $btn-color-primary;
     background: $transparent;
     outline:none;
+    @include trans(all, 0.3s, ease-in-out);
     &:hover{
-        color: $btn-color-primary;
+        color: $black;
+        background: $btn-color-primary;
         text-decoration: none;
     }
 }
