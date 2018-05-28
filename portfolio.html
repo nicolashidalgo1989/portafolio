@@ -12,12 +12,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-5 text-left"> 
-                        <h1 class="title-brand"> <strong>nh</strong>design</h1> 
+                        <h1 class="title-brand"> 
+                            <a href="index.html">
+                                <strong>nh</strong>design
+                            </a>           
+                        </h1> 
                     </div> 
                     <div class="col-2 text-center">
-                        <div class="btn-menu">
-                            <i class="fas fa-bars"></i>
-                        </div>
+                        <div class="btn-menu"></div>
                     </div>  
                     <div class="col-md-3 col-sm-3 col-5 offset-md-2 text-right">
                         <form class="btn-search">
@@ -28,38 +30,53 @@
                             </span>
                             <i class="fas fa-search"></i>
                         </form>
+                    </div> 
+                </div>
+            </div>
+        </header>
+        <section class="portafolio" id="portafolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <nav class="tab">
+                    <a href="javascript:void(0);" class="filter" data-filter="mix">All</a>
+                    <a href="javascript:void(0);" class="filter" data-filter="design">Design</a>
+                    <a href="javascript:void(0);" class="filter" data-filter="web">Web</a>
+                    <a href="javascript:void(0);" class="filter" data-filter="lux">Ilustration</a>
+                </nav>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card lux">
+                        <figure>
+                            <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
+                            <figcaption>
+                                <h3>Proyecto Ilustracion</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam distinctio.</p>
+                                <a href="" class="btn btn-white">Ver proyecto</a>
+                            </figcaption>   
+                        </figure> 
                     </div>
-                    <nav class="col-md-4 offset-md-4 col-12 menu hidden text-center">
-                        <a href="index.html">Home</a>
-                        <a href="index.html#services">Servicios</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="index.html#about">Acerca</a>
-                        <a href="index.html#contact">Contacto</a> 
-                    </nav>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card web">
+                        <figure>
+                            <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
+                            <figcaption>
+                                <h3>Proyecto Web</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam distinctio.</p>
+                                <a href="" class="btn btn-white">Ver Proyecto</a>
+                            </figcaption>   
+                        </figure> 
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card design">
+                        <figure>
+                            <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
+                            <figcaption>
+                                <h3>Proyecto Diseño</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam distinctio.</p>
+                                <a href="" class="btn btn-white">Ver Proyecto</a>
+                            </figcaption>   
+                        </figure> 
+                    </div> 
                 </div>
-            </div>
-        </header> 
-        <div class="container portafolio">
-            <h2>Portfolio</h2>
-            <nav class="tab">
-                <a href="">Design</a>
-                <a href="">Web</a>
-                <a href="">Ilustration</a>
-            </nav>
-            <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 card">
-                    <figure>
-                        <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image"> 
-                    </figure>
-                    <figcaption>
-                        <h3>Proyecto</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam distinctio.</p>
-                        <a href="" class="btn btn-white">Ver Proyecto</a>
-                    </figcaption>  
-                </div>
-            </div>
-        </div> 
+            </div>  
+        </section> 
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -96,7 +113,8 @@
         </footer>
         <a href="javascript:void(0);" class="fas fa-angle-down btn-scroll-down"></a> 
         <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script defer src="assets/js/fontawesome-all.min.js"></script>
-        <script defer src="assets/js/app.js"></script>
+        <script defer src="assets/js/app.js"></script> 
     </body>
 </html>
