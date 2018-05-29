@@ -7,18 +7,14 @@ const   btnMenu = document.querySelector('.btn-menu'),
         textArea = document.querySelectorAll('textarea')[0],
         body = document.querySelector('body'), 
         linksMenu = document.querySelectorAll('.menu a'),
-        elHeader = document.querySelector('.header .container .row');
+        elHeader = document.querySelector('.header .container .row'),
+        elFooter = document.querySelector('.footer .container .row'), 
+        menu = document.createElement('nav'),
+        uList = document.createElement('ul');
 
 const line = document.createElement('span');
 line.className = 'line';
 btnMenu.appendChild(line);
-
-const menu = document.createElement('nav');
-menu.className = 'col-md-4 offset-md-4 col-12 menu hidden text-center';
-elHeader.appendChild(menu);
-
-const uList = document.createElement('ul');
-menu.appendChild(uList); 
 
 //listeners 
 btnMenu.addEventListener('click', openMenu);
@@ -31,6 +27,12 @@ for(i=0;input.length>i;i++){
 //textArea.addEventListener('click', activeLabel);
 //textArea.addEventListener('blur', outInput);
 //functions  
+function createMenuHeader(){ 
+    menu.className = 'col-md-4 offset-md-4 col-12 menu'; 
+    menu.appendChild(uList); 
+    elHeader.appendChild(menu); 
+    menu.classList.add('hidden text-center');
+}
 function openMenu(e){   
     e.preventDefault();
     if (e.target.classList.contains('line')) {
@@ -72,7 +74,7 @@ function outInput(e){
         errorMsg.classList.remove('show'); 
     }
 } 
-let links = [{
+let linksHeader = [{
     name: 'Home',
     href: '/index.html',
     target: '_self',
@@ -103,8 +105,7 @@ let links = [{
     target: '_self'
 }
 ];
-
-links.forEach(function(items) {
+linksHeader.forEach(function(items) {
 let list = document.createElement('li');
 let link = document.createElement('a');
 uList.appendChild(list);
@@ -113,4 +114,10 @@ link.innerHTML = items.name;
 link.setAttribute('href', items.href);
 link.setAttribute('target', items.target); 
 });
+/*
+linksFooter.forEach(function(items){
+let list = document.createElement('li');
+let link = document.createElement('a');
+});
+*/
  

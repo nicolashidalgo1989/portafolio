@@ -353,11 +353,26 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-weight: 200;
     font-size: 0.9em;
     text-transform: uppercase; }
-    .tab a:hover {
+    .tab a:hover, .tab a:focus[data-filter] {
       text-decoration: none;
       color: white; }
-      .tab a:hover:after {
+      .tab a:hover:after, .tab a:focus[data-filter]:after {
         width: 100%; }
+      .tab a:hover ~ div:not([data-filter="ilustration"]), .tab a:focus[data-filter] ~ div:not([data-filter="ilustration"]) {
+        height: 0px;
+        width: 0px;
+        border: none;
+        margin: 0; }
+      .tab a:hover ~ div:not([data-filter="web"]), .tab a:focus[data-filter] ~ div:not([data-filter="web"]) {
+        height: 0px;
+        width: 0px;
+        border: none;
+        margin: 0; }
+      .tab a:hover ~ div:not([data-filter="design"]), .tab a:focus[data-filter] ~ div:not([data-filter="design"]) {
+        height: 0px;
+        width: 0px;
+        border: none;
+        margin: 0; }
     .tab a:after {
       content: "";
       width: 0;

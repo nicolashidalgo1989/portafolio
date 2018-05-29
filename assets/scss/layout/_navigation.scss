@@ -9,11 +9,29 @@
         font-weight:200;
         font-size:0.9em;
         text-transform:uppercase;
-        &:hover{
+        &:hover, &:focus[data-filter]{
             text-decoration:none;
             color:$white;
             &:after{
                 width:100%;
+            }
+            &~ div:not([data-filter="ilustration"]){
+                height:0px;
+                width:0px;
+                border:none;
+                margin:0;
+            }
+            &~ div:not([data-filter="web"]){
+                height:0px;
+                width:0px;
+                border:none;
+                margin:0;
+            }
+            &~ div:not([data-filter="design"]){
+                height:0px;
+                width:0px;
+                border:none;
+                margin:0;
             }
         }
         &:after{
@@ -24,7 +42,7 @@
             background: $white;
             margin:0 auto;
             @include trans(all, 0.3s, ease-in-out);
-        }
+        } 
     }
 }
 
