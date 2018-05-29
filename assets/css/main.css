@@ -29,8 +29,9 @@ body {
   width: 100%;
   position: relative;
   height: auto;
-  min-height: 30vh;
-  padding-top: 132px; }
+  min-height: 40vh;
+  padding-top: 132px;
+  margin-bottom: 32px; }
   .banner .content {
     position: absolute;
     bottom: 20px;
@@ -402,6 +403,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       margin: 0 auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
+
+.tags {
+  font-style: italic;
+  font-size: 0.8em;
+  margin-bottom: 32px; }
+  .tags a {
+    color: rgba(50, 47, 68, 0.8);
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; }
+    .tags a:hover {
+      color: #88DD83; }
 
 .home, .services, .about, .contact, .portafolio, .entrada {
   height: auto;

@@ -45,4 +45,16 @@
         } 
     }
 }
+.tags{
+    font-style:italic;
+    font-size:0.8em;
+    margin-bottom:32px;
+    & a {
+        color: $purple;
+        @include trans(color, 0.3s, ease-in-out);
+        &:hover{
+            color: $green;
+        }
+    }
+}
 
