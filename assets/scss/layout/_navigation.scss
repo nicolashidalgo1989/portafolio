@@ -46,14 +46,17 @@
     }
 }
 .tags{
+    width:100%;
     font-style:italic;
-    font-size:0.8em;
+    font-size:0.9em;
     margin-bottom:32px;
+    text-align:center;
     & a {
-        color: $purple;
+        color: $purple-bg-1;
         @include trans(color, 0.3s, ease-in-out);
         &:hover{
             color: $green;
+            text-decoration:none;
         }
     }
 }

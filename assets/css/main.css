@@ -405,15 +405,18 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       transition: all 0.3s ease-in-out; }
 
 .tags {
+  width: 100%;
   font-style: italic;
-  font-size: 0.8em;
-  margin-bottom: 32px; }
+  font-size: 0.9em;
+  margin-bottom: 32px;
+  text-align: center; }
   .tags a {
-    color: rgba(50, 47, 68, 0.8);
+    color: #ACA2EA;
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out; }
     .tags a:hover {
-      color: #88DD83; }
+      color: #88DD83;
+      text-decoration: none; }
 
 .home, .services, .about, .contact, .portafolio, .entrada {
   height: auto;
