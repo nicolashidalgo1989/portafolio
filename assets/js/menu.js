@@ -1,5 +1,3 @@
-
-
 let links = [{
         name: 'Home',
         href: '/index.html',
