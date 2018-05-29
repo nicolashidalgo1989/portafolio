@@ -34,7 +34,7 @@ body {
   margin-bottom: 32px; }
   .banner .content {
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     width: 100%;
     z-index: 2; }
   .banner .background-image {
