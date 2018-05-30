@@ -42,16 +42,19 @@ function openMenu(e){
     }
     header.classList.toggle('open');
     menu.classList.toggle('hidden');
-    document.querySelector('body').classList.toggle('overflow-hidden');  
-    console.log(e.target);
+    document.querySelector('body').classList.toggle('overflow-hidden');
 }
 function openSearch(e){ 
+    e.preventDefault();
     let clase = e.target.classList;
     if(!e.target.parentElement.classList.contains('open')){
         btnSearch.classList.add('open'); 
     }else if(clase.contains('clear-search')){
         btnSearch.classList.remove('open');  
+    }else if(inputSearch.value.length > 0 && clase.contains('fa-search')){
+        window.location.href = '/search.html'
     }
+    console.log(inputSearch.value.length);
 }  
 function clearSearch(){ 
     let clear = document.querySelector('.clear-search');
@@ -82,7 +85,7 @@ let linksHeader = [{
 },
 {
     name: 'Servicios',
-    href: '/index.html#servicios',
+    href: '/index.html#services',
     target: '_self'
 },
 {
@@ -102,7 +105,7 @@ let linksHeader = [{
 },
 {
     name: 'Contact',
-    href: '/index.html#contact',
+    href: '/contact.html',
     target: '_self'
 }
 ];

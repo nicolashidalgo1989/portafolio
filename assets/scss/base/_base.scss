@@ -2,7 +2,7 @@ body{
     background: $black;
     color: $white;
     font-size: $fontSize;
-    font-family: $roboto;
+    font-family: $font;
 } 
 .aligner{
     @include flex(center, center, columns);

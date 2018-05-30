@@ -9,13 +9,13 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"> 
     <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
+<body> 
     <header class="header" id="header">
         <div class="container">
             <div class="row">
                 <div class="col-5 text-left"> 
                     <h1 class="title-brand"> 
-                        <a href="index.html"> 
+                        <a href="index.html">
                             <strong>nh</strong>design
                         </a>    
                 </div> 
@@ -24,8 +24,8 @@
                 </div>  
                 <div class="col-md-3 col-sm-3 col-5 offset-md-2 text-right">
                     <form class="btn-search">
-                        <input type="text" id="search" class="input-search" placeholder="Search...">
-                        <span class="clear-search">
+                        <input v-model="textoBusqueda" type="text" id="search" class="input-search">
+                        <span v-if="textoBusqueda" class="clear-search">
                             clear search 
                             <i class="fas fa-times"></i>
                         </span>
@@ -35,56 +35,44 @@
             </div>
         </div>
     </header>
-    <section class="banner"> 
-        <div class="content">
-            <h2>Titulo entrada</h2>  
-        </div>
-        <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image"> 
-    </section>
-    <div class="container entrada">
-        <div class="row">
-            <div class="col-md-8 col-12 offset-md-2">
-                <nav class="tags">
-                    Tags: 
-                    <a href="">web</a> / 
-                    <a href="">design</a> / 
-                    <a href="">ilustration</a>
-                </nav>
-                <div class="row">
-                    <div class="col-12">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officia non aspernatur placeat accusamus, sit laboriosam repellat aut voluptate, culpa exercitationem rem obcaecati corrupti ut porro cumque nostrum soluta enim.</p> 
-                        <a href="" class="btn-white">Ver sitio</a>
-                    </div>
+    <section class="busqueda">
+        <div class="container">
+            <h2>Resultados de busqueda</h2>
+            <p class="textoBusqueda">{{ textoBusqueda }}</p> 
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card" data-filter="ilustration">
+                    <figure>
+                        <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
+                        <figcaption>
+                            <h3>Proyecto Ilustracion</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam distinctio.</p>
+                            <a href="" class="btn btn-white">Ver proyecto</a>
+                        </figcaption>   
+                    </figure> 
                 </div>
-                <div class="row">
-                    <div class="col-6">
-                        <figure>
-                            <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="proceso proyecto" class="img-fluid">
-                            <figcaption>
-                                texto
-                            </figcaption>
-                        </figure>  
-                    </div>
-                    <div class="col-6">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis iusto atque nostrum tempora iste accusamus iure mollitia reprehenderit, dolorem necessitatibus voluptas, rem porro qui amet doloremque eligendi dolore tempore debitis?</p>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="col-12">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officia non aspernatur placeat accusamus, sit laboriosam repellat aut voluptate, culpa exercitationem rem obcaecati corrupti ut porro cumque nostrum soluta enim.</p> 
-                        <figure>
-                            <div class="h-200">
-                                <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="proceso proyecto" class="img-fluid"> 
-                            </div>
-                            <figcaption>
-                                texto
-                            </figcaption>
-                        </figure>  
-                    </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card" data-filter="web">
+                    <figure>
+                        <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
+                        <figcaption>
+                            <h3>Proyecto Web</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam distinctio.</p>
+                            <a href="" class="btn btn-white">Ver Proyecto</a>
+                        </figcaption>   
+                    </figure> 
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card" data-filter="design">
+                    <figure>
+                        <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
+                        <figcaption>
+                            <h3>Proyecto Diseño</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam distinctio.</p>
+                            <a href="" class="btn btn-white">Ver Proyecto</a>
+                        </figcaption>   
+                    </figure> 
                 </div> 
             </div>
-        </div>
-    </div>  
+        </div>  
+    </section>  
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -120,6 +108,7 @@
         </div>
     </footer>
     <a href="javascript:void(0);" class="fas fa-angle-down btn-scroll-down"></a> 
+    <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image"> 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
     <script src="assets/js/fontawesome-all.min.js"></script>
     <script src="assets/js/vue.js"></script>  

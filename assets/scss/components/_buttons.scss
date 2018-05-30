@@ -21,6 +21,25 @@ $btn-color-inactive: $white;
         text-decoration: none;
     }
 }
+.btn-green{
+    border-radius: 100px;
+    border: 1px solid $green;
+    display: block;
+    padding: 8px 0;
+    margin: 0 auto 32px;
+    width: 100%;
+    max-width:200px;
+    text-align: center;
+    color: $green;
+    background: $transparent;
+    outline:none;
+    @include trans(all, 0.3s, ease-in-out);
+    &:hover{
+        color: $black;
+        background: $btn-color-primary;
+        text-decoration: none;
+    }
+}
 .btn-scroll-down{
     color: $btn-color-primary;
     position: fixed;
