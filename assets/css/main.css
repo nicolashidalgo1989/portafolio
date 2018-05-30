@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext");
+.logo {
+  margin: 0 auto;
+  display: block; }
+  .logo svg {
+    width: 200px;
+    height: 120px;
+    background: transparent;
+    margin: 0 auto;
+    display: block; }
+    .logo svg .path {
+      stroke-dasharray: 320;
+      /*total linear lenght*/
+      stroke-dashoffset: 0;
+      animation: dash 1.5s linear;
+      stroke-width: 2px;
+      stroke: #88DD83;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round; }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 320; }
+  to {
+    stroke-dashoffset: 0; } }
 body {
   background: #101010;
   color: white;
@@ -417,22 +442,22 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-weight: 200;
     font-size: 0.9em;
     text-transform: uppercase; }
-    .tab a:hover, .tab a:focus[data-filter] {
+    .tab a:hover, .tab a.active, .tab a:focus, .tab a:active {
       text-decoration: none;
       color: white; }
-      .tab a:hover:after, .tab a:focus[data-filter]:after {
+      .tab a:hover:after, .tab a.active:after, .tab a:focus:after, .tab a:active:after {
         width: 100%; }
-      .tab a:hover ~ div:not([data-filter="ilustration"]), .tab a:focus[data-filter] ~ div:not([data-filter="ilustration"]) {
+      .tab a:hover ~ div:not([data-filter="ilustration"]), .tab a.active ~ div:not([data-filter="ilustration"]), .tab a:focus ~ div:not([data-filter="ilustration"]), .tab a:active ~ div:not([data-filter="ilustration"]) {
         height: 0px;
         width: 0px;
         border: none;
         margin: 0; }
-      .tab a:hover ~ div:not([data-filter="web"]), .tab a:focus[data-filter] ~ div:not([data-filter="web"]) {
+      .tab a:hover ~ div:not([data-filter="web"]), .tab a.active ~ div:not([data-filter="web"]), .tab a:focus ~ div:not([data-filter="web"]), .tab a:active ~ div:not([data-filter="web"]) {
         height: 0px;
         width: 0px;
         border: none;
         margin: 0; }
-      .tab a:hover ~ div:not([data-filter="design"]), .tab a:focus[data-filter] ~ div:not([data-filter="design"]) {
+      .tab a:hover ~ div:not([data-filter="design"]), .tab a.active ~ div:not([data-filter="design"]), .tab a:focus ~ div:not([data-filter="design"]), .tab a:active ~ div:not([data-filter="design"]) {
         height: 0px;
         width: 0px;
         border: none;
@@ -481,7 +506,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .card {
   background: #101010;
-  text-align: center; }
+  text-align: center;
+  display: none; }
   .card figure {
     position: relative;
     overflow: hidden;
@@ -510,5 +536,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       transition: top 0.3s ease-in-out; }
     .card figure:hover figcaption {
       top: 0; }
+  .card.show {
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */

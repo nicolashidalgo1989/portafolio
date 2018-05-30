@@ -9,7 +9,7 @@
         font-weight:200;
         font-size:0.9em;
         text-transform:uppercase;
-        &:hover, &:focus[data-filter]{
+        &:hover, &.active, &:focus, &:active{
             text-decoration:none;
             color:$white;
             &:after{
@@ -60,4 +60,3 @@
         }
     }
 }
-

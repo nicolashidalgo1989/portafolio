@@ -39,13 +39,13 @@
         <div class="container">
             <h2>Portfolio</h2>
             <nav class="tab">
-                <a href="javascript:void(0);" tabindex="-1" data-filter="all">All</a>
-                <a href="javascript:void(0);" tabindex="-1" data-filter="design">Design</a>
-                <a href="javascript:void(0);" tabindex="-1" data-filter="web">Web</a>
-                <a href="javascript:void(0);" tabindex="-1" data-filter="ilustration">Ilustration</a>
+                <a href="javascript:void(0);" class="btn active" onclick="filterSelection('all')">All</a>
+                <a href="javascript:void(0);" class="btn" onclick="filterSelection('design')">Design</a>
+                <a href="javascript:void(0);" class="btn" onclick="filterSelection('web')">Web</a>
+                <a href="javascript:void(0);" class="btn" onclick="filterSelection('ilustration')">Ilustration</a>
             </nav>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card" data-filter="ilustration">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card ilustration">
                     <figure>
                         <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
                         <figcaption>
@@ -55,7 +55,7 @@
                         </figcaption>   
                     </figure> 
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card" data-filter="web">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card web">
                     <figure>
                         <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
                         <figcaption>
@@ -65,7 +65,7 @@
                         </figcaption>   
                     </figure> 
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card" data-filter="design">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 card design">
                     <figure>
                         <img src="assets/img/caspar-rubin-224229-unsplash.jpg" alt="" class="background-image">
                         <figcaption>

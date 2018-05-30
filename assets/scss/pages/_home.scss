@@ -5,7 +5,7 @@
 }
 .about, .portafolio, .blog, .busqueda {
     background:black;
-}
+} 
 .background-image{
     object-fit: cover;
     object-position: center;
@@ -18,7 +18,8 @@
 } 
 .card{
     background:$black;
-    text-align:center;  
+    text-align:center; 
+    display:none; 
     & figure {
         position:relative;
         overflow:hidden;
@@ -52,5 +53,8 @@
             }
 
         }
+    }
+    &.show {
+        display:block;
     }
 }
