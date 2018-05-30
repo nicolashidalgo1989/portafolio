@@ -17,6 +17,7 @@ line.className = 'line';
 btnMenu.appendChild(line);
 
 //listeners 
+document.addEventListener('DOMContentLoaded', createMenuHeader);
 btnMenu.addEventListener('click', openMenu);
 btnSearch.addEventListener('click', openSearch); 
 inputSearch.addEventListener('click', clearSearch); 
@@ -28,21 +29,21 @@ for(i=0;input.length>i;i++){
 //textArea.addEventListener('blur', outInput);
 //functions  
 function createMenuHeader(){ 
-    menu.className = 'col-md-4 offset-md-4 col-12 menu'; 
+    menu.className = 'col-md-4 offset-md-4 col-12 menu hidden text-center'; 
     menu.appendChild(uList); 
-    elHeader.appendChild(menu); 
-    menu.classList.add('hidden text-center');
+    elHeader.appendChild(menu);  
 }
 function openMenu(e){   
-    e.preventDefault();
-    if (e.target.classList.contains('line')) {
+    e.preventDefault(); 
+    if(e.target.classList.contains('line')){
         e.target.parentElement.classList.toggle('close-btn');
-        header.classList.toggle('open');
-        menu.classList.toggle('hidden');
-        document.querySelector('body').classList.toggle('overflow-hidden');
-    } else {
+    }else{
         e.target.classList.toggle('close-btn');
     }
+    header.classList.toggle('open');
+    menu.classList.toggle('hidden');
+    document.querySelector('body').classList.toggle('overflow-hidden');  
+    console.log(e.target);
 }
 function openSearch(e){ 
     let clase = e.target.classList;
@@ -106,13 +107,13 @@ let linksHeader = [{
 }
 ];
 linksHeader.forEach(function(items) {
-let list = document.createElement('li');
-let link = document.createElement('a');
-uList.appendChild(list);
-list.appendChild(link);
-link.innerHTML = items.name;
-link.setAttribute('href', items.href);
-link.setAttribute('target', items.target); 
+    let list = document.createElement('li');
+    let link = document.createElement('a');
+    uList.appendChild(list);
+    list.appendChild(link);
+    link.innerHTML = items.name;
+    link.setAttribute('href', items.href);
+    link.setAttribute('target', items.target); 
 });
 /*
 linksFooter.forEach(function(items){

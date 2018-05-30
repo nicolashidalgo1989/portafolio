@@ -103,7 +103,8 @@ p {
 
 .rss {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 64px; }
   .rss li {
     margin-bottom: 16px; }
     .rss li a {
