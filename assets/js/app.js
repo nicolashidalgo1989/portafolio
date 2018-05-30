@@ -82,32 +82,32 @@ function outInput(e){
 } 
 let linksHeader = [{
     name: 'Home',
-    href: '/index.html',
+    href: 'index.html',
     target: '_self',
 },
 {
     name: 'Servicios',
-    href: '/index.html#services',
+    href: 'index.html#services',
     target: '_self'
 },
 {
     name: 'Portfolio',
-    href: '/portfolio.html',
+    href: 'portfolio.html',
     target: '_self'
 },
 {
     name: 'Blog',
-    href: '/blog.html',
+    href: 'blog.html',
     target: '_self'
 },
 {
     name: 'Acerca',
-    href: '/index.html#about',
+    href: 'index.html#about',
     target: '_self'
 },
 {
     name: 'Contact',
-    href: '/contact.html',
+    href: 'contact.html',
     target: '_self'
 }
 ];
